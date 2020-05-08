@@ -1,3 +1,4 @@
+  
 const express = require('express');
 const app = express();
 
@@ -12,9 +13,9 @@ require('./models');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static('./client/build'));
+// add this line
+app.use(express.static('client/build'));
 
-// routes
 app.use(routes);
 
 // Bootstrap server

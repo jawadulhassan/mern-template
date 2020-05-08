@@ -1,0 +1,29 @@
+{
+  "name": "season-manager",
+  "version": "1.0.0",
+  "description": "Movie and season manager for personal use.",
+  "main": "server.js",
+	"scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawadulhassan/mern-template.git"
+  },
+  "keywords": [
+    "season"
+  ],
+  "author": "jawad ul hassan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jawadulhassan/mern-template/issues"
+  },
+  "homepage": "https://github.com/jawadulhassan/mern-template#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

@@ -7,7 +7,7 @@ router.use('/api/books', bookRoutes);
 
 // If no API routes are hit, send the React app
 router.use(function(req, res) {
-	const index = path.join(__dirname, 'client', 'build', 'index.html');
+	const index = path.join(__dirname, 'front-end', 'build', 'index.html');
   res.sendFile(index);
 });
 

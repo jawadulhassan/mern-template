@@ -1,10 +1,9 @@
-  
 const express = require('express');
 const app = express();
-const path = require("path")
+
 const routes = require('./routes');
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 // require db connection
 require('./models');
@@ -14,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // add this line
-app.use(express.static(path.join(__dirname, "front-end", "build")))
+app.use(express.static('front-end/build'));
 
 app.use(routes);
 

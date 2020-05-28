@@ -1,14 +1,13 @@
 const router = require('express').Router();
-const bookRoutes = require('./books');
+const seasonRoutes = require('./seasons');
 const path = require('path');
 
 // API routes
-router.use('/api/books', bookRoutes);
+router.use('/api/seasons', seasonRoutes);
 
 // If no API routes are hit, send the React app
 router.use(function(req, res) {
-	const index = path.join(__dirname, 'front-end', 'build', 'index.html');
-  res.sendFile(index);
+	res.sendFile(path.join(__dirname, '../front-end/build/index.html'));
 });
 
 module.exports = router;
